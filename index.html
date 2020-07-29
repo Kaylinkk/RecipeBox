@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Lora&display=swap" rel="stylesheet">
+
+<style>
+    .sr-only{
+        position:absolute;
+        width:1px;
+        height:1px;
+        padding: 0;
+        margin:-1px;
+        overflow:hidden;
+        clip: rect(0,0,0,0);
+        border:0;
+       /* 대체 글자를 브라우저 화면에 출력하지 않기 위한 설정
+           아이콘을 장식이 아닌 의미가 있는 것으로 자동으로 인식되게 만들때 사용
+       */ 
+    }
+</style>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Kim's Kitchen</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="Style.css" />
+    <script src="https://kit.fontawesome.com/abb4bdb5c0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function() {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+
+    <!--jQery를 사용하기 위한 설정-->
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class ="container-small">
+                <a href="index.html" class="headA">RecipeBox</a>
+
+                <button type="button" class="headC">
+                    <i class="fas fa-caret-down" title="menu"></i>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="contents.html">CONTETNS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--시작페이지 -->
+    <section class="contentA">
+        <div class="container">
+            <img src="img/LOGO.png" alt="" />
+            <h1>RecipeBox</h1>
+            <p>Little kitechen recipe</p>
+            <a href="#">MENU</a>
+        </div>
+    </section>
+
+
+
+    <!--레시피 카테고리-->
+
+    <section class="contentB">
+        <div class="container">
+
+            <div class="text">
+                <i class="fas fa-utensils icon"></i>
+                <a href="#"> Recipe Category</a>
+            </div>
+        
+        <div class="text">
+            <i class="fas fa-thumbs-up icon"></i>
+            <a href="#"> Best Recipe</a>
+        </div>
+
+        <div class="text">
+            <i class="fas fa-calendar-day icon"></i>
+            <a href="#"> Today's Special </a>
+        </div>
+
+        </div>
+    </section>
+   
+
+
+
+    <footer>
+        <div class="container">
+
+            <div class="footA">
+                <h2> RecipeBox</h2>
+                <p>
+                    Wolgolro 291,Dalseo-gu, Daegu. 42781 <br />
+                    <a href="kyulim0429@gmail.com">kyulim0429@gmail.com</a>
+                </p>
+
+
+                <nav class="footD">
+                    <!--sns icon-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square" title="facebook"></i>
+
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+
+                                <i class="fab fa-apple" title="apple"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+
+                                <i class="fab fa-instagram" title="instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+
+                                <i class="fab fa-google-plus-g" title="google"></i>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+                    </ul>
+
+                </nav>
+              
+
+            </div>
+
+            
+
+
+
+            <nav class="footB">
+                <!-- 네비게이션 용도로 쓰인다면 nav로 적고 나머지는 div-->
+                <div>
+                    <h3> ABOUT</h3>
+                    <ul>
+                        <!--순서가 필요없음 unorder list-->
+                        <li><a href="#">address</a></li>
+                        <li><a href="#">map</a></li>
+                        <li><a href="#">staff</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3> CONTNETS</h3>
+                    <ul>
+
+                        <li><a href="#">notice</a></li>
+                        <li><a href="#">profile</a></li>
+                        <li><a href="#">buisness</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footC">
+
+               © RecipeBox. All rights reserved.
+            </div>
+        </div>
+            </footer>
+
+</body>
+</html>

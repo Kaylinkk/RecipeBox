@@ -1,0 +1,181 @@
+﻿<<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<link href="https://fonts.googleapis.com/css2?family=Fondamento&family=Lora&display=swap" rel="stylesheet">
+
+<style>
+    .sr-only{
+        position:absolute;
+        width:1px;
+        height:1px;
+        padding: 0;
+        margin:-1px;
+        overflow:hidden;
+        clip: rect(0,0,0,0);
+        border:0;
+       /* 대체 글자를 브라우저 화면에 출력하지 않기 위한 설정
+           아이콘을 장식이 아닌 의미가 있는 것으로 자동으로 인식되게 만들때 사용
+       */ 
+    }
+</style>
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Kim's Kitchen</title>
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="Style.css" />
+    <script src="https://kit.fontawesome.com/abb4bdb5c0.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function() {
+            $(".headC").click(function() {
+                $(".headB").slideToggle();
+            });
+        });
+    </script>
+
+    <!--jQery를 사용하기 위한 설정-->
+
+</head>
+
+<body class="nohero">
+
+    <header>
+        <div class="container">
+            <div class ="container-small">
+                <a href="index.html" class="headA">RecipeBox</a>
+
+                <button type="button" class="headC">
+                    <i class="fas fa-caret-down" title="menu"></i>
+                </button>
+            </div>
+
+            <nav class="headB">
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="contents.html">CONTETNS</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<article class="post">
+    <div class="container">
+
+        <div class="bread"> <!--제일 위쪽에 top이랑 list로 부모목록보여주기-->
+            <ol>
+                <li><a href="index.html">TOP</a></li>
+                <li><a href="#">LIST</a></li>
+            </ol>
+        </div>
+
+        <h1>김치찜</h1>
+        
+        <img src="img/kimchijjim.jpg" alt="reciepe" />
+        <p>1.김치를 준비한다</p>
+        <p>2.냄비에 김치와 돼지고기(삼겹살)을 깔아준다</p>
+        <p>3.김치국물과 육수(또는 쌀뜨물, 정수물)을 김치가 찰랑거릴 정도로 부어준다</p>
+        <p>4.설탕 한스푼, 다진마늘 한 클술을 넣고 중불에서 끓여준다.</p>
+        <p>5.비린 맛을 없애기 위해 청주 또는 맛술, 생강술 혹은 소주를 2큰술 넣어준다</p>
+        <p>6.어슷 썬 대파와 양파를 넣고 취향에 따라 고춧가루를 넣어준다. </p>
+        <p>7.국물이 거의 졸아들때까지 끓어주면 완성!</p>
+    </div>
+</article>
+
+
+    <footer>
+        <div class="container">
+
+            <div class="footA">
+                <h2> RecipeBox</h2>
+                <p>
+                    Wolgolro 291,Dalseo-gu, Daegu. 42781 <br />
+                    <a href="kyulim0429@gmail.com">kyulim0429@gmail.com</a>
+                </p>
+
+
+                <nav class="footD">
+                    <!--sns icon-->
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook-square" title="facebook"></i>
+
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+
+                                <i class="fab fa-apple" title="apple"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+
+                                <i class="fab fa-instagram" title="instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+
+                                <i class="fab fa-google-plus-g" title="google"></i>
+                            </a>
+                        </li>
+
+
+
+
+
+
+
+
+                    </ul>
+
+                </nav>
+              
+
+            </div>
+
+            
+
+
+
+            <nav class="footB">
+                <!-- 네비게이션 용도로 쓰인다면 nav로 적고 나머지는 div-->
+                <div>
+                    <h3> ABOUT</h3>
+                    <ul>
+                        <!--순서가 필요없음 unorder list-->
+                        <li><a href="#">address</a></li>
+                        <li><a href="#">map</a></li>
+                        <li><a href="#">staff</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3> CONTNETS</h3>
+                    <ul>
+
+                        <li><a href="#">notice</a></li>
+                        <li><a href="#">profile</a></li>
+                        <li><a href="#">buisness</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="footC">
+
+               © RecipeBox. All rights reserved.
+            </div>
+        </div>
+            </footer>
+
+</body>
+</html>
